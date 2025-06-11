@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -134,3 +135,56 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+=======
+# Backend (Spring Boot)
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.log
+*.iml
+
+# Frontend (Angular)
+dist/
+tmp/
+out-tsc/
+node_modules/
+npm-debug.log
+yarn-error.log
+.angular/cache
+.coverage/
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+
+# IDEs and Editors
+.idea/
+.project
+.classpath
+.factorypath
+.settings/
+.springBeans
+.sts4-cache
+.nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+.c9/
+*.launch
+*.sublime-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+>>>>>>> 1f143c2 (Initial commit: Angular project setup)
