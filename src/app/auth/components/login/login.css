@@ -1,0 +1,101 @@
+:root {
+  --med-blue: #e3f2fd;         /* bleu clair de fond */
+  --med-green: #4caf50;        /* vert pharmacie pour accents */
+  --med-dark-blue: #1565c0;    /* bleu profond hôpital */
+  --text-color: #1a2e3b;       /* gris foncé lisible */
+  --error-color: #d32f2f;
+  --field-bg: #ffffff;
+}
+
+.login-card {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--med-blue);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 80, 130, 0.1);
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--med-dark-blue);
+}
+
+.login-icon {
+  font-size: 32px;
+  color: var(--med-green);
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+/* Apparence propre intégrée */
+mat-form-field.mat-form-field {
+  background-color: var(--field-bg);
+  border-radius: 4px;
+}
+
+/* Corrige le comportement du label flottant */
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.mat-form-field-label {
+  font-weight: 500;
+  color: var(--med-dark-blue);
+}
+
+/* Couleur des inputs */
+.mat-input-element {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Erreurs */
+.error-message {
+  color: var(--error-color);
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Bouton pro */
+.login-button {
+  width: 100%;
+  background-color: var(--med-dark-blue);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0d47a1;
+}
+
+@media screen and (max-width: 480px) {
+  .login-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+}
